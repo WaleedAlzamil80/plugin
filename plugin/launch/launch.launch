@@ -1,0 +1,5 @@
+<launch>
+	<rosparam command="load" file="config/yaml.yaml" />
+	<node pkg="plugin" name="ip_camera_publisher" type="pub_images.py" />
+	<node pkg="plugin" name="ip_camera_subscriber" type="sub_images.py" />
+<launch/>
